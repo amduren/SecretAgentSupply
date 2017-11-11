@@ -1,0 +1,54 @@
+/* universal styles */
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+/* header styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+}
+
+span a {
+  text-decoration: none;
+  color: white;
+}
+
+.banner {
+  height: 25rem;
+  width: 100%;
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: firebrick;
+  padding: 0.75rem 0;
+}
+
+/* main section styles */
+
+
+/* footer styles */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+footer span {
+  width: 960px;
+  text-align: left;
+}
