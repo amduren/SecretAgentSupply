@@ -17,12 +17,37 @@ span a {
 }
 
 .banner {
+  display: flex;
+  justify-content: center;
   height: 25rem;
   width: 100%;
   background-image: url("../images/moto.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.container {
+  width: 960px;
+  margin-top: 9rem;
+}
+
+.text-content {
+  width: 20rem;
+  padding: 2rem 3rem;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.text-content h1 {
+  font-size: 2rem;
+}
+
+.text-content h3 {
+  font-size: 1rem;
+  padding-bottom: 0.25rem;
 }
 
 .nav {
