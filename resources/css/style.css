@@ -5,10 +5,14 @@ html {
 }
 
 /* header styles */
-nav {
+nav.desktop {
   display: flex;
   justify-content: space-between;
   width: 960px;
+}
+
+nav.mobile {
+  display: none;
 }
 
 span a {
@@ -155,4 +159,79 @@ footer {
 footer span {
   width: 960px;
   text-align: left;
+}
+
+/* media queries */
+@media only screen and (max-width: 1024px) {
+  .products,
+  .details {
+    width: 100%;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  .product.thermal-glasses {
+    display: none;
+  }
+
+  nav.desktop {
+    display: none;
+  }
+
+  nav.mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .banner {
+    align-items: flex-end;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .company span {
+    display: none;
+  }
+
+  .company-container {
+    justify-content: center;
+  }
+
+  .company img {
+    padding: 0.5rem 0;
+  }
+
+  footer span {
+    text-align: center;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .detail {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .products,
+  .details {
+    width: 90%;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .product.cellular-watch {
+    display: none;
+  }
 }
