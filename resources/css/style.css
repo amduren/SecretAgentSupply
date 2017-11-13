@@ -188,23 +188,30 @@ footer span {
 
 @media only screen and (max-width: 470px) {
   .banner {
-    align-items: flex-end;
+    height: 15rem;
   }
 
   .container {
     width: 100%;
+    margin-top: 10rem;
   }
 
-  .company span {
-    display: none;
+  .text-content {
+    width: 100%;
+    padding: 0;
   }
 
-  .company-container {
-    justify-content: center;
+  .text-content h1 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 2rem;
   }
 
-  .company img {
-    padding: 0.5rem 0;
+  .text-content h3 {
+    font-size: 0.77rem;
+    padding-bottom: 0.25rem;
+    padding-top: 1rem;
+    margin-left: 2rem;
   }
 
   footer span {
@@ -219,7 +226,7 @@ footer span {
 
   .detail {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
   }
 
   .products,
