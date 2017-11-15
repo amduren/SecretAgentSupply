@@ -3,7 +3,6 @@ html {
   background-color: white;
   font-family: Helvetica, sans-serif;
   font-size: 18px;
-  line-height: 1.4em;
 }
 
 h1,
@@ -45,6 +44,50 @@ h4 {
 }
 
 /* banner section */
+.banner {
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+}
+
+.text-content {
+  background-color: black;
+  color: white;
+  width: 20rem;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  position: relative;
+  top: 9rem;
+}
+
+.text-content h1 {
+  font-size: 2rem;
+  margin: 0.25rem 0;
+}
+
+@media only screen and (max-width: 470px) {
+  .banner {
+    height: 15rem;
+  }
+
+  .text-content {
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 10rem;
+  }
+
+  .text-content h1 {
+    font-size: 1rem;
+  }
+
+  .text-content h3 {
+    font-size: 0.77rem;
+  }
+}
+
+/* nav section */
 nav.desktop {
   display: flex;
   justify-content: space-between;
@@ -58,26 +101,6 @@ nav.mobile {
 span a {
   text-decoration: none;
   color: white;
-}
-
-
-
-.text-content {
-  width: 20rem;
-  padding: 2rem 3rem;
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.text-content h1 {
-  font-size: 2rem;
-}
-
-.text-content h3 {
-  font-size: 1rem;
-  padding-bottom: 0.25rem;
 }
 
 .nav {
@@ -185,31 +208,9 @@ footer span {
 }
 
 @media only screen and (max-width: 470px) {
-  .banner {
-    height: 15rem;
-  }
-
   .container {
     width: 100%;
     margin-top: 10rem;
-  }
-
-  .text-content {
-    width: 100%;
-    padding: 0;
-  }
-
-  .text-content h1 {
-    font-size: 1rem;
-    padding-bottom: 1rem;
-    margin-left: 2rem;
-  }
-
-  .text-content h3 {
-    font-size: 0.77rem;
-    padding-bottom: 0.25rem;
-    padding-top: 1rem;
-    margin-left: 2rem;
   }
 
   footer span {
