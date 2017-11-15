@@ -23,6 +23,28 @@ h4 {
 }
 
 /* header styles */
+.company {
+  background-color: black;
+  color: white;
+}
+
+.company .container {
+  display: flex;
+  align-items: center;
+  padding: 0.66rem 0 0.66rem 0.5rem;
+}
+
+.company img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.company span {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* banner section */
 nav.desktop {
   display: flex;
   justify-content: space-between;
@@ -38,44 +60,7 @@ span a {
   color: white;
 }
 
-.company {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: black;
-  color: white;
-}
 
-.company-container {
-  display: flex;
-  align-items: center;
-  width: 960px;
-}
-
-.company img {
-  height: 1.5rem;
-  width: auto;
-  margin-left: 0.5rem;
-  margin-right: 1rem;
-}
-
-.company span {
-  text-transform: uppercase;
-  font-size: 1rem;
-  padding: 0.66rem 0;
-}
-
-.banner {
-  display: flex;
-  justify-content: center;
-  height: 25rem;
-  width: 100%;
-  background-image: url("../images/moto.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
 .text-content {
   width: 20rem;
